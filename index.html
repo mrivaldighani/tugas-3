@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Covid-19 Tracker</h1>
+      <div class="search">
+        <form id="myForm" action="">
+          <input id="countryForm" type="text" list="countryList" placeholder="Country Name" />
+          <datalist id="countryList"> </datalist>
+          <button class="btn">Get Data</button>
+        </form>
+      </div>
+      <h2 id="countryOutput">Name Country</h2>
+      <div class="group-card">
+        <div class="card">
+          <h4>Population</h4>
+          <p id="populationOutput">N/a</p>
+        </div>
+        <div class="card">
+          <h4>Tests</h4>
+          <p id="testOutput">N/a</p>
+        </div>
+        <div class="card">
+          <h4>Deaths</h4>
+          <p id="deathOutput">N/a</p>
+        </div>
+        <div class="card">
+          <h4>Active Cases</h4>
+          <p id="activeOutput">N/a</p>
+        </div>
+        <div class="card">
+          <h4>Recovered</h4>
+          <p id="recoveredOutput">N/a</p>
+        </div>
+        <div class="card">
+          <h4>Total Cases</h4>
+          <p id="totalOutput">N/a</p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
