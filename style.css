@@ -3,7 +3,7 @@
   --normal: #3d3952;
   --light: #dfd0f3;
   --primary: #ffcc88;
-  --darkprimary: #896e53;
+  --secondary: #896e53;
 }
 
 body {
@@ -36,7 +36,7 @@ input {
   background-color: var(--primary);
 }
 .btn:focus {
-  background-color: var(--darkprimary);
+  background-color: var(--secondary);
 }
 input {
   outline: none;

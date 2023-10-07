@@ -30,7 +30,7 @@ function populateCountryList() {
 // get data from countryList
 populateCountryList();
 
-// submit input
+// submit input to html
 const myForm = document.getElementById("myForm");
 
 myForm.addEventListener("submit", (e) => {
@@ -52,7 +52,7 @@ function parseData(stat, currentCountry) {
   const filteredData = stat.filter((countries) => {
     return countries.country === currentCountry;
   });
-
+  // if data not founnd
   if (filteredData.length === 0) {
     countryOutput.innerHTML = "Data tidak ditemukan";
     populationOutput.innerHTML = "error";
@@ -61,7 +61,9 @@ function parseData(stat, currentCountry) {
     activeOutput.innerHTML = "error";
     recoveredOutput.innerHTML = "error";
     totalOutput.innerHTML = "error";
-  } else {
+  }
+  // if data found
+  else {
     filteredData.forEach((countryData) => {
       countryOutput.innerHTML = currentCountry;
       populationOutput.innerHTML = countryData.population;
